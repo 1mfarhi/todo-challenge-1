@@ -33,6 +33,6 @@
 
 <ol>
     {% for note in notes %} 
-      <li>{{ note.text }}</li>
+      <li><a href="{% url 'note' note.id %}">{{ note.text }}</a></li>
      {% endfor %}
 </ol> 
